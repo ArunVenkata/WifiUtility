@@ -124,7 +124,7 @@ class WifiUtility:
             fh.close()
             return True
         except subprocess.CalledProcessError as e:
-            print("OUTPUT == ", e.output)
+            # print("OUTPUT == ", e.output)
             
             return False
 
@@ -153,7 +153,6 @@ class WifiUtility:
 
         self.add_profile(ssid, passwd)
         cmd = self.get_cmd('connect', profile=ssid)
-        print(" ".join(cmd))
         try:
             output = subprocess.check_output(cmd)
             print("OUTPUT ==", output)
