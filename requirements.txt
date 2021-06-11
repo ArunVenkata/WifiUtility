@@ -1,0 +1,5 @@
+certifi==2021.5.30
+et-xmlfile==1.1.0
+openpyxl==3.0.7
+tablib==3.0.0
+wincertstore==0.2
