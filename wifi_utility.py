@@ -155,7 +155,7 @@ class WifiUtility:
         cmd = self.get_cmd('connect', profile=ssid)
         try:
             output = subprocess.check_output(cmd)
-            print("OUTPUT ==", output)
+            # print("OUTPUT ==", output)
             return True
         except subprocess.CalledProcessError as e:
             log_error(e.output.decode('utf-8'))
